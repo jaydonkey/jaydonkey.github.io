@@ -1,0 +1,79 @@
+p{
+		color:blue;
+		font-size:22px;
+		}
+#background{
+	background-color:gray;
+}	
+
+header{
+		height:25px;
+		width:25px;
+		border:2px solid black;
+		background-color:white;
+		margin-bottom:30px;
+		}	
+.list-item{
+		color:red;
+		font-size:22px;
+		}
+.paragraph{
+	   color:blue:
+	    font-size:22px:
+		
+		}
+#button{
+	width:325px;
+	height:300px;
+	backgrond-color:gray;
+	border-raidus:20px;
+	}		
+.wrap-trivia{
+	height:500px;
+	width:450px;
+	border:5px solid black;
+	padding:10px;
+	}
+.wrap-text{
+	color:#ff28e0;
+	 font-size:2.1px
+	 }
+
+#one{
+height: 150px;
+width: 150px;
+background-color: red;
+display: inline-block;
+position: absolute;
+    }
+
+#two{
+height: 150px;
+width: 150px;
+background-color: white;
+display: inline-block;
+position: absolute;
+    }
+
+#three{
+height: 150px;
+width: 150px;
+background-color: blue;
+display: inline-block;
+position: absolute;
+    }
+	
+
+.navitem { 
+list-style-type:none;
+display:inline;
+padding-right:1.5em;
+}
+
+
+#navmenu {
+width:250px;
+height:30px;
+margin:auto;
+}	
+	

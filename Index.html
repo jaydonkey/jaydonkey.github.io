@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<script>
+			function banner(){ 
+			var text = confirm("Did You Really Want to Click on My Banner?"); 
+			return text; 
+			}
+
+			function answer(){ 
+			var radio = document.getElementsByName("trivia"); 
+			var selection = false; 
+			var message = ""; 
+
+			for( var i = 0; i < radio.length; i++) { 
+			if(radio[i].value == "book" && radio[i].checked == true) { 
+			selection = true; 
+			} //end if statement 
+			} //end for loop
+
+			if(selection == true) {
+			message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+			} else { 
+			message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+			}
+			document.getElementById("response").innerHTML = message;
+			}
+		</script>
+		
+		<title> Facts Unlimited </title>
+		
+		<link type="text/css" rel="stylesheet" href="main.css"/>
+	</head>
+	
+	<nav>
+		<ul id="navmenu">
+			<li class="navitem"><a href="positions.html">postions</a> </li>
+			<li class="navitem">No link 1</li>
+			<li class="navitem" >No link 2</li>
+		</ul>
+	</nav>
+	
+	<body id="background">
+		<header></header>
+		
+		<p class="paragraph">Finding Facts is entertaining</p>
+		
+		<video width="400" height="220" controls autoplay>
+			<source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+		</video>
+		
+		<audio width="400" height="220" controls autoplay>
+			<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+			Your browser does not support HTML 5 audio.
+		</audio>
+		
+		<h1>Searching for Facts</h1>
+		
+		<p class=paragraph>
+			Welcome to Facts <i>Unlimited</i>. Here we exchange facts and information as well as <u>sources</u> to said information and facts. Facts must be from <b>official</b> web-sites as well as the information
+		</p>
+		
+		<ol>
+			<li class=listitem> Wikipedia is <b> not </b> a official web-site </li>
+		</ol>
+		
+		<span>
+			<div class="wrap-trivia">
+				<h2> Facts trivia</h2>
+				<p>what was the first type encyclopaedia</p> 
+				<Form>
+					<div id="response"></div>
+					<input type="radio" name="trivia" value="book">Book<br>
+					<input type="radio" name="trivia" value="internet">Internet<br>
+					<input type="radio" name="trivia" value="wikipedia">Wikipedia<br>
+					<input type="radio" name="trivia" value="youtube">Youtube<br>
+					<input type="button" value="click here" id="button"onclick="answer()">
+				</Form>
+			</div>
+		</span>
+		<img src=""/>
+		<a href="http.//w3schools.com" />
+		<footer></footer>
+	</body>
+</html>
